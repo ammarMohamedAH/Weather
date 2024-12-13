@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "PT Sans Caption", sans-serif;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.Logo ~ p,
+.navbar-toggler {
+  color: white !important;
+}
+.navbar-toggler {
+  background-color: white;
+}
+.Logo {
+  font-family: Pacifico, sans-serif;
+  color: white;
+}
+nav {
+  background-color: #212529 !important;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show,
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: white !important;
+}
+nav .navbar-brand h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav .navbar-brand p {
+  font-size: 10px;
+}
+
+.fs-0 {
+  font-size: 70px;
+}
+
+footer {
+  margin-top: 100px;
+}
+.footer {
+  margin-top: 80px;
+}
+.footer-icon a {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: cyan;
+}
+.footer-icon a:hover {
+  color: white;
+  background-color: cyan;
+}
+.navbar-toggler:focus {
+  border: none;
+  box-shadow: none;
+}

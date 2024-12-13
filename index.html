@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <link rel="icon" href="./images/113.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg p-4">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <div class="row">
+            <div class="col">
+              <img src="images/logo.png" class="img-fluid" alt="Logo" />
+            </div>
+            <div class="col">
+              <h2 class="Logo">Weather</h2>
+              <p>tagline goes here</p>
+            </div>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a class="nav-link" href="#">Live Cameras</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a class="nav-link" href="#">Photo</a>
+            </li>
+            <li class="nav-item ms-3">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="footer">
+      <div class="container d-flex justify-content-center flex-column">
+        <form class="d-flex w-75 mt-4 mb-4 align-self-center" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            id="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-info" type="button">Search</button>
+        </form>
+        <!-- !cards -->
+        <div class="card-holder row mt-4 g-3">
+          <div class="card-holder row mt-4 g-3" id="demo"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark d-flex justify-content-center">
+      <div
+        class="container row justify-content-center align-items-center ps-5 pe-5 py-3"
+      >
+        <form class="d-flex mt-4 mb-4 col-md-8" role="search">
+          <input
+            class="form-control me-2"
+            type="email"
+            id="mail"
+            placeholder="Enter your mail to subscribe...."
+            aria-label="mail"
+          />
+          <a
+            class="btn btn-outline-info"
+            href="mailto:ammarmohamedah@gmail.com"
+            type="button"
+            >Subscribe</a
+          >
+        </form>
+        <div class="footer-icon col-md-4 d-flex justify-content-evenly">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-google"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
