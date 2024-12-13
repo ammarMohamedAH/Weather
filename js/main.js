@@ -161,7 +161,50 @@ function getData(x=d) {
           
      `
      
-      
+      for(let i=1;i<data.forecast.forecastday.length;i++) {
+       document.getElementById("demo").innerHTML +=`<div class="col-lg-4 " >
+            <div class="card h-100">
+              <div
+                class="card-header d-flex justify-content-between align-items-center"
+              >
+                <div id="today">${days[ new Date(data.forecast.forecastday[i].date).getDay()]}</div>
+                <div>${ new Date(data.forecast.forecastday[i].date).getDate()} ${monthNames[ new Date(data.forecast.forecastday[i].date).getMonth()]}</div>
+              </div>
+              <div class="card-body">
+                <div class="container ">
+                <div id="deg-icon " class="d-flex justify-content-center"
+                      ><img src="${`https:${data.forecast.forecastday[i].day.condition.icon}`}" alt="Icon" id="icon-pic"
+                    /></div>
+                  
+                  <div>
+                    <div class="fs-0 fw-bold text-center">
+                    <span id="degree-today">${data.forecast.forecastday[i].day.
+                      avgtemp_c
+                      }</span>
+                    <span><sup>o</sup>C</span>
+                  </div>
+                    <div class="fs-6 fw-bold text-dep">
+                    <span id="degree-today">Max: ${data.forecast.forecastday[i].day.
+                      maxtemp_c
+                      }</span>
+                    <span><sup>o</sup>C</span>
+                  </div>
+                    <div class="fs-6 fw-bold text-dep">
+                    <span id="degree-today">Min: ${data.forecast.forecastday[i].day.
+                      mintemp_c
+                      }</span>
+                    <span><sup>o</sup>C</span>
+                  </div>
+                  <span id="weather" class="text-primary">${data.forecast.forecastday[i].day.condition.text}</span>
+                    
+                  </div>
+              
+                  
+                </div>
+              </div>
+            </div>
+          </div>`
+      }
 
       
     })
