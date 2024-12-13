@@ -17,7 +17,7 @@ const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", 
 
 function getData(x=d) {
   fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=0a854d7f2dbd41578c6113637240812&q=${x}&days=3&aqi=no&alerts=no`
+    `https://api.weatherapi.com/v1/forecast.json?key=0a854d7f2dbd41578c6113637240812&q=${x}&days=3&aqi=no&alerts=no`
   )
     .then(function (data) {
       return data.json();
